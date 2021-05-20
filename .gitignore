@@ -1,16 +1,16 @@
 
 ###> symfony/framework-bundle ###
-/EjercicioDos/.env.local
-/EjercicioDos/.env.local.php
-/EjercicioDos/.env.*.local
-/EjercicioDos/config/secrets/prod/prod.decrypt.private.php
-/EjercicioDos/public/bundles/
-/EjercicioDos/var/
-/EjercicioDos/vendor/
+/Ejercicio2/.env.local
+/Ejercicio2/.env.local.php
+/Ejercicio2/.env.*.local
+/Ejercicio2/config/secrets/prod/prod.decrypt.private.php
+/Ejercicio2/public/bundles/
+/Ejercicio2/var/
+/Ejercicio2/vendor/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
-/EjercicioDos/.phpunit
-/EjercicioDos/.phpunit.result.cache
-/EjercicioDos/phpunit.xml
+/Ejercicio2/.phpunit
+/Ejercicio2/.phpunit.result.cache
+/Ejercicio2/phpunit.xml
 ###< symfony/phpunit-bridge ###
