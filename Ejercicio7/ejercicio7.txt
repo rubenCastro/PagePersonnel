@@ -1,0 +1,4 @@
+7) Implementar script jQuery para cambiar el comportamiento de los enlaces a ficheros PDF,
+para que se abran en una página distinta a la actual (agregar target=” _blank”).
+
+$("a[href$='.pdf']").attr('target','_blank');

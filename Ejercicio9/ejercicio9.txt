@@ -1,0 +1,25 @@
+9) Tenemos el siguiente código HTML
+<div class="grandparent">
+    <div class="parent">
+        <a class="children">Texto</a>
+    </div>
+</div>
+
+1- ¿Que código es necesario agregar para que “.children” tenga un tamaño de 20x20px?
+
+max-width: 20px !important;
+min-width: 20px;
+max-height: 20px;
+min-height: 20px;
+display: inline-block; //como a es un elemento en linea y no se le puede aplicar ni height ni width
+le añadimos el inline-block para que sea tratado como un bloque o se hace esto o el 20x20 no podría ser aplicado.
+
+2- y desplazarlo de 50px a la derecha en absoluto respecto a “.parent” (no utilizar ni margin ni padding).
+//Añado el position relative al .parent para que la referencia sea desde parent y no el navegador
+.children {
+    position: absolute;
+    left: 50px;
+}
+.parent {
+    position: relative;
+}

@@ -1,0 +1,11 @@
+3) Enumera los pasos fundamentales para desplegar un proyecto Symfony desde un
+repositorio git, incluyendo la instalación vacía de la base de datos. Sino recuerdas los
+comandos exactos, incluye descripción de los pasos a realizar.
+
+
+1- Configuramos el .env con los datos para produccion. Entorno, BD, key de apis, etc
+2- Hacemos un git clone del repositorio. En mi caso sería:
+     git clone https://github.com/rubenCastro/PagePersonnel.git
+3- Hacemos un composer install en caso de que no esté la carpeta vendor
+4- Con el comando php bin/console doctrine:schema:update --force añadiríamos todas las tablas que existan 
+en las entidades

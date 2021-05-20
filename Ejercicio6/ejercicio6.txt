@@ -1,0 +1,15 @@
+6) Tenemos el siguiente esquema de base de datos
+
+¿Hallar los departamentos que tienen más de tres empleados?
+
+//Sacamos el numero de empleados de los departamentos que tienen mas de 3 empleados
+SELECT COUNT(*) as totalEmpleados, emp.codDepto FROM departamentos as dep
+INNER JOIN empleados emp ON dep.codDepto = emp.codDepto
+GROUP BY emp.codDepto HAVING COUNT(*) > 3
+
+¿Mostrar el número de empleados de esos departamentos?
+
+//Sacamos el numero de empleados de todos los departamentos
+SELECT COUNT(*) as totalEmpleados, emp.codDepto FROM departamentos as dep
+INNER JOIN empleados emp ON dep.codDepto = emp.codDepto
+GROUP BY emp.codDepto

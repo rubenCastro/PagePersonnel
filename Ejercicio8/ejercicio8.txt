@@ -1,0 +1,18 @@
+8) Tenemos el siguiente código HTML
+
+<div class="parent">
+    <div class="children">Texto</div>
+</div>
+
+1- ¿Código CSS necesario agregar a “.parent” para centrar el texto?
+Si solo se pretende centrar el texto horizontalmente con un text-align:center ya sería suficiente.
+En caso de que lo queramos centrar tanto horizontal como verticalmente, añadiríamos
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+2- ¿Código CSS necesario agregar a “.children” para centrar el texto?
+No se si lo entendí bien puesto que la respuesta para este sería igual a la anterior dada y lo he probado en un editor
+y funciona correctamente para ambos.

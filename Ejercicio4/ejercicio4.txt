@@ -1,0 +1,14 @@
+4) Tenemos un proyecto que se va a publicar sobre la url:
+http://proyecto.prometeoinnovations.com y cuya base de datos se llamará “proyecto”.
+Enumera los pasos fundamentales para la preparación del entorno Linux necesario para su
+publicación. Sino recuerdas los comandos exactos, incluye descripción de los pasos a realizar.
+
+1- Añadiríamos el repositorio de php y lo instalariamos
+    sudo apt install php7.3 php7.3-common php7.3-opcache php7.3-cli
+2- Instalaríamos un servidor web, por ejemplo, nginx.
+    sudo apt install nginx
+3- Instalaríamos una base de datos, MYSQL.
+    sudo apt install mysql-server
+
+    3.1 Entrando como root en la consola haríamos un CREATE DATABASE proyecto y además podríamos, crear un usuario
+    añadirle permisos que se quieran, etc
