@@ -7,6 +7,9 @@ publicación. Sino recuerdas los comandos exactos, incluye descripción de los p
     sudo apt install php7.3 php7.3-common php7.3-opcache php7.3-cli
 2- Instalaríamos un servidor web, por ejemplo, nginx.
     sudo apt install nginx
+    
+    Tras la instalacion de nginx necesitaremos modificar la configuracion existente de acuerdo a la documentacion de symfony, 
+    para apuntar al public/index.php en el proyecto. https://symfony.com/doc/current/setup/web_server_configuration.html#nginx
 3- Instalaríamos una base de datos, MYSQL.
     sudo apt install mysql-server
 

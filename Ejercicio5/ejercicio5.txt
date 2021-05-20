@@ -3,7 +3,7 @@ la rama de “feature_xxx”, nos solicitan resolver un hotfix de inmediato a pa
 versión estable de “develop”. ¿Cómo procederías?
 
 1- Como se dice, de inmediato, guardaríamos los cambios realizados en nuestra rama en local ya sea con un commit o si es
-algo no "commiteable" aún un git stash.
+algo no "commiteable" aún, con un git stash.
 2- Sacaría una nueva rama de develop para solucionar el hotfix.
 3- Una vez solucionado y commiteado, haríamos un merge o un pull request a develop con los nuevos cambios.
 4- Aceptados o mergeados estos cambios, hariamos un merge a nuestra rama en local dependiendo logicamente de si

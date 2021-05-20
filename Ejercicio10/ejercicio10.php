@@ -39,15 +39,16 @@ function parserArrTable($arrTable){
  * Aqui es lo que yo entendí, entiendo que hay dos arrays uno con la tabla1 y otro con la 
  * tabla2(supuse que podían venir mas arrays dentro del mismo de cada tabla).
  * 
- * Si la variable "last_run" del script es menor que la que hay en la tabla1, entonces la tabla1 mete su valor a 
- * la tabla2. La tabla2 solo recibe y no tienen ningun comportamiento sobre la tabla1.
+ * Si la variable "last_run" del script es menor que la que hay en la tabla1 y que en la tabla2, 
+ * entonces la tabla1 mete su valor a la tabla2.
  */
 function changeSaldo($arrTable, &$tableToChange){
     $last_run = "24/04/1998";
     $dateLastRun = DateTime::createFromFormat('j/m/Y', $last_run);
     foreach($arrTable as $id => $table){
         $dateTable = DateTime::createFromFormat('j/m/Y', $table['fecha']);
-        if($dateTable > $dateLastRun){
+        $dateTable2 = DateTime::createFromFormat('j/m/Y', $tableToChange['id']['fecha']);
+        if($dateTable > $dateLastRun && $dateTable2 > $dateLastRun){
             $tableToChange[$id]['saldo'] = $table['saldo'];
         }
     }
